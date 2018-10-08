@@ -17,10 +17,12 @@ v = uniroot(f = b,lower = 0 ,upper = 1)$root
 v
 #Eercise 2.2
 u = runif(1)
-if(u<=1/4){
+u
+if(u<1/4){
   b = function(x){ ((x*x)/4 - x +1) - u }
   v = uniroot(f = b,lower = 0 ,upper = 1/4)$root
 }else{
-  b = function(x){ ((-1*x*x)/12 + x -9/4) - u }
-  v = uniroot(f = b,lower = 1/4 ,upper = 1)$root
+  b = function(x){ ( x - x*x/12 -9/4) - u }
+  v = uniroot(f = b,lower = 0 ,upper = 3/4)$root
 }
+v
