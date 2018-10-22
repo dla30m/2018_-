@@ -1,3 +1,4 @@
+#E
 par(mfrow=c(1,2))
 # method 1
 set.seed(1234)
