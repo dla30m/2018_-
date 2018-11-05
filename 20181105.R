@@ -11,7 +11,7 @@ EX4 = function(n){
   return(a)
 }
 
-#proc.time()  �ɶ�
+#proc.time()  ®É¶¡
 a <- proc.time()
 t = replicate(10000,EX4(100))
 mean(t)
@@ -86,4 +86,4 @@ EX = function(){
 EX()
 t = replicate(10000,EX())
 mean(t)
-hist(t)
+hist(t,break=seq(0.5,10))
